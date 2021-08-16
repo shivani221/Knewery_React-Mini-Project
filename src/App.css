@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+body {
+  background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-color: #cccccc;
+ }
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* trial */
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.sizedimage{
+  /* margin: 60% 10px 2rem 2rem; */
+  margin-top: 60%;
+  margin-right: 5%;
+  margin-left: 25%;
+  width: 75px;
+  height: 200px;
+}
+
+/* .sizedimage{
+  margin: 60% 10px 2rem 2rem;
+  width: 75px;
+  height: 200px;
+} */
+
+.backbody{
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+.frontbody{
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+.navbarstuff{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: whitesmoke;
+}
+
+#knewery{
+  margin-left: 1%;
+}
+
+#navbarimage{
+  width: 3%; 
+  height: 3%;
+  border: 3px solid white;
+}
+
+.searchoption{
+  margin-left: 53.6%;
+}
+
+.yeardropdown{
+  margin-left: 2%;
+}
+
+/* .selectop{
+  width: 182px;
+  height: 31px;
+} */
+
+.tagline{
+  font-style: italic;
+  font-weight: bold;
+  color: #444444;
+}
+
+.firstbrewed{
+  color: #865439;
+  font-weight: bold;
+}
+
+.descrip{
+  overflow: auto;
+}
+.fooditems{
+  color: #161616;
+}
+.beername{
+  background-color: #E5B299;
+  border-radius: 10px;
+  color: #4F0E0E;
+  padding: 5% 5% 5% 5%;
+}
+
+
+.post-wrap {
+  width: 100%;
+  height: 350px;
+  perspective: 1000px;
+  overflow: auto;
+}
+.post-front, .post-back {
+  position: absolute;
+  background-color: white;
+}
+.post-back {
+  transform: rotateY(180deg);
+}
+.post-front, .post-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.post-wrap:hover .post {
+  transition-delay: 1s;
+  transform: rotateY(180deg);
+}
+.post {
+  transition: transform 1s;
+  transform-style: preserve-3d;   
+}
+
